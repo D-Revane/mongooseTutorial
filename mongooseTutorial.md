@@ -36,7 +36,7 @@ Since we are using mongoose, we must assign each of our files that require mongo
   
 Here is an example of a complete schema.js file  
 
-![alt text](./schema.png "Schema File")  
+![alt text](http://198.27.107.201/web-108/assignments/mongooseTutorial/images/schema.png "Schema File")  
 
 Notice at the end of the file we export the schema model to access it from other files  
 
@@ -51,18 +51,13 @@ Create your server/index file in the root directory of your application. This fi
     $ touch server.js  
 
 Remember to assign the mongoose const value.  
-This is where we will establish our applications connection to our mongoDB database using mongoose connect  
+
+Now we will establish our applications connection to our mongoDB database using mongoose connect  
 
   ```javascript  
    mongoose.connect('mongodb://localhost/Todo', {useNewUrlParser: true})  
   .catch(e => {  
   console.error("connection issue" , e.message)  
   })  
-  ```  
-
-For ease of use we will assign a const value of db to our mongoose connection  
-
-  ```javascript  
-  const db = mongoose.connect  
   ```  
 
