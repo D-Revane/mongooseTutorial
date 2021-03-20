@@ -87,11 +87,11 @@ The requests shown in this example are
 
 Here is an example of a routes file  
 
-![alt text](http://198.27.107.201/web/108/assignments/mongooseTutorial/routes.png "Routes File")  
+![alt text](http://198.27.107.201/web/108/assignments/mongooseTutorial/images/routes.png "Routes File")  
 
 Notice that we have created a const value that referres to a controllers file   
 
-    ```javascript  
+  ```javascript  
     const todoCtrl = require('../controllers/todo-ctrl')  
     ```  
 
@@ -114,7 +114,7 @@ Here is an example of a controller file. To fit the screenshot this file only in
 
 Notice that the first line in the file creates a const value that referres to the schema model file created before  
 
-    ```javascript  
+  ```javascript  
     const Todo = require('../models/todo-model')  
     ```  
 
