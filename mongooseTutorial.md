@@ -22,11 +22,11 @@ All of Mongooses functionality is built around customizable data structures call
 
 Create a "models" directory inside your application to store your schema files  
 
-  $ mkdir models  
+    $ mkdir models  
 
 Inside of your models directory create your schema file  
 
-  $ touch schema.js  
+    $ touch schema.js  
 
 Since we are using mongoose, we must assign each of our files that require mongoose funtionality a const value that referres to the mongoose library  
 
@@ -36,7 +36,7 @@ Since we are using mongoose, we must assign each of our files that require mongo
   
 Here is an example of a complete schema.js file  
 
-![alt text](schema.png "Schema File")  
+![alt text](./schema.png "Schema File")  
 
 Notice at the end of the file we export the schema model to access it from other files  
 
@@ -46,9 +46,9 @@ Notice at the end of the file we export the schema model to access it from other
 
 ## **Server/Index file**  
 
-Create your server/index file in the root of your <application_directory>. This file is usually named either server.js or index.js based on prefference  
+Create your server/index file in the root directory of your application. This file is usually named either server.js or index.js based on prefference  
 
-  $ touch server.js  
+    $ touch server.js  
 
 Remember to assign the mongoose const value.  
 This is where we will establish our applications connection to our mongoDB database using mongoose connect  
